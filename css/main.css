@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a,
+input,
+select {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+img{
+    vertical-align: middle;
+}
+
+
+/* Home page start */
+
+.nav-img{
+    width: 150px;
+    height: 60px;
+}
+.nav-btn{
+    background-color: #793bf3;
+    color: #ffffff;
+    border: #793bf3;
+    cursor: auto;
+    border: #000;
+    text-transform:uppercase;
+}
+.nav-btn:hover{
+    background-color: #f6f6f6;
+    color: #793bf3;
+}
+
+.nav-link{
+    color: #1f232b;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+}
+.nav-link:hover{
+    color: #55bce7;
+}
+
+
+
+.amt-text-img{
+    /* justify-content:flex-end;     */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.amt-text{
+    width: 50%;
+}
+.amt-head-img{
+    width: 50%;
+}
+.head-amt-text{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+.subhead-amt-text{
+    font-size: 14px;
+    color: #1f232b;
+    font-weight: 600;
+}
+
+.amt-para{
+    text-align: justify;
+}
+.amt-img{
+    width: 100%;
+    height: auto ;
+    float: right;
+    display: b;
+}
+.banner-1-0{
+    font-size: 3rem;
+    font-weight: 100;
+    color: #1f232b;
+}
+.banner-1-1{
+    font-weight: 900;
+    font-size: 45px;
+    color: #1f232b;
+}
+.carousel-text-1{
+    padding-bottom: 16%;
+}
+.details-text{
+    font-size: 40px;
+    font-weight:900;
+}
+.title-font{
+    color: #55bce7;
+}
+.fa-solid{
+    color: #55bce7;
+    font-size: 30px;
+}
+
+ /* .bg-form-img{
+} */
+.bg-form-text{
+    position: absolute;
+    top: -50px;
+    text-align: center;
+} 
+
+/* Home page end */
+
+
+/* aplicant page start */
+
+
+
+.aplicantPage .banner{
+    position: relative;
+}
+
+.aplicantPage .banner .heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.aplicantPage .banner h2 {
+    color: #FF010A;
+    font-weight: 900;
+    font-size: 64px;
+}
+
+
+.aplicantPage .banner .body .divider{
+    position: absolute;
+    bottom: 0;
+    background-color: #003e53;
+    padding: .6rem;
+    width: 100%;
+}
+
+.aplicantPage .banner .body .divider::after{
+    content: '\f0d7';
+    font-family: "Font Awesome 6 free";
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    /* background-color: #003e43; */
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+/* aplicant page end */
+
