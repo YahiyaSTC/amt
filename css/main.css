@@ -87,6 +87,7 @@ header .nav-link:hover {
   background-image: url("../images/footer\ 1PNG.png");
   background-position: top;
   text-align: center;
+  background-repeat: no-repeat;
 }
 
 .img-1-text {
@@ -299,6 +300,11 @@ ul.top_infomation li {
   position: relative;
 }
 
+.aplicantPage .banner .body img {
+  width: 100%;
+  height: 444px;
+}
+
 .aplicantPage .banner .heading {
   position: absolute;
   top: 0;
@@ -461,6 +467,13 @@ ul.top_infomation li {
   background-color: #f3f2f2;
   color: #274670;
   border: 1px solid #000;
+}
+
+.aplicantPage .client h2 {
+  color: #4e7ae1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 44px;
 }
 
 /* aplicant page end */
@@ -740,7 +753,7 @@ ul.top_infomation li {
   width: 25%;
 }
 
-.findajob .input_find_a_job_select{
+.findajob .input_find_a_job_select {
   width: 16% !important;
 }
 
@@ -986,11 +999,9 @@ ul.top_infomation li {
   flex-direction: column;
 }
 
-
-
 /*  */
 
-.btn-1{
+.btn-1 {
   background-color: #55bce7;
   color: #000;
   border-color: #55bce7;
@@ -998,11 +1009,11 @@ ul.top_infomation li {
   margin: 5px;
 }
 
-.job_1{
+.job_1 {
   color: #55bce7;
 }
 
-.applying{
+.applying {
   color: #55bce7;
 }
 
@@ -1010,6 +1021,145 @@ ul.top_infomation li {
   border: 1px solid grey;
 } */
 
-.btn-form{
+.btn-form {
   position: absolute;
+}
+
+/* slider */
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.125);
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  /* position: relative; */
+  width: 100%;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+.caro-logo-img {
+  justify-content: center;
+  display: flex;
+}
+/* slider */
+
+/* media Query */
+
+@media only screen and (max-width: 994px) {
+  .aplicantPage .section1 .col-md-12 {
+    flex-direction: column-reverse;
+  }
+
+  .aplicantPage .banner .body img {
+    width: auto !important;
+  }
+
+  .aplicantPage .section1 .right,
+  .aplicantPage .section1 .left {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .clientPage .request .right .heading {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aplicantPage .texxxtt .logo img {
+    width: 100% !important;
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .aplicantPage .section1 .form {
+    padding: 10px;
+  }
+  .aplicantPage .section1 .form .logo img {
+    width: 100% !important;
+    /* max-width: 20%; */
+  }
+
+  .aplicantPage .section1 .form .onlineApp {
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .aplicantPage .banner h2 {
+    font-size: 40px;
+  }
+
+  .aplicantPage .texxxtt .parrah p,
+  .aplicantPage .section1 .form .text p,
+  .aplicantPage .section1 .form .onlineApp p,
+  .aplicantPage .section1 .form .onlineApp a,
+  .aplicantPage .section1 .parrah p {
+    font-size: 12px;
+  }
+
+  .aplicantPage .section1 .form .feild label {
+    font-size: 16px;
+  }
+
+  .aplicantPage .section1 .form .btn,
+  .aplicantPage .section1 .parrah p strong {
+    font-size: 15px;
+  }
+
+  .aplicantPage .section1 .form .feild input,
+  .aplicantPage .section1 .form .feild select {
+    padding: 3px !important;
+    height: 30px !important;
+    line-height: 0;
+  }
+  
+  .aplicantPage .client h2 {
+    font-size: 25px;
+  }
 }
