@@ -57,16 +57,22 @@ header .container button {
   text-transform: uppercase;
   padding: 15px 40px;
 }
+
+header .container button:hover{
+  background-color: #fff;
+  color: #793bf3 !important;
+}
 /* header .nav-btn:hover {
   color: #793bf3 !important;
   302561
   180801
 } */
 
-header .container button:hover{
-  background-color: #fff;
-  color: #793bf3 !important;
+header .container{
+  max-width: 1140px;
 }
+
+
 
 header .nav-links {
   position: sticky !important;
@@ -389,12 +395,8 @@ ul.top_infomation li {
   margin-top: 150px;
 }
 
-.homePage .cards_div {
-  /* display: flex; */
-  /* justify-content: space-evenly; */
-  /* flex-wrap: wrap; */
-  /* margin-top: 40px !important; */
-}
+/* .homePage .cards_div {
+} */
 
 .homePage .portion1 {
   border-right: 1px solid lightgray;
@@ -550,11 +552,16 @@ ul.top_infomation li {
 }
 
 .aplicantPage .texxxtt .parrah p {
-  text-align: justify;
+  /* text-align: justify; */
   /* font-family: "Roboto",Sans-serif; */
-  font-size: 19px;
+  /* font-size: 19px;
   font-weight: 300;
-  line-height: 1.7em;
+  line-height: 1.7em; */
+  font-weight: 400;
+  font-size: 17px;
+  /* margin-top: 40px; */
+  margin-bottom: 70px;
+  color: #7a7a7a;
 }
 
 .aplicantPage .texxxtt .parrah p strong {
@@ -562,9 +569,13 @@ ul.top_infomation li {
 }
 
 .aplicantPage .section1 .parrah p {
-  font-size: 16px;
+  /* font-size: 16px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 30px; */
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 70px;
+  color: #7a7a7a;
 }
 
 .aplicantPage .section1 .parrah p strong {
@@ -623,7 +634,7 @@ ul.top_infomation li {
   color: #7a7a7a;
   font-weight: 700;
   display: block;
-  font-size: 19px;
+  font-size: 17px;
 
   margin-bottom: 10px;
 }
@@ -633,12 +644,12 @@ ul.top_infomation li {
   background-color: #fff;
   border-radius: 8px;
   width: 100%;
-  padding: 10px;
+  padding: 6px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   color: #7a7a7a;
   box-shadow: none;
-  height: 50px;
+  height: 38px;
   letter-spacing: -0.02em;
   line-height: 30px;
   padding-bottom: 11px;
@@ -773,20 +784,20 @@ ul.top_infomation li {
 .clientPage .section2 .form .feild textarea,
 .clientPage .section2 .form .feild select {
   background-color: #fff;
-  border-radius: 8px;
-  width: 100%;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 15px;
-  color: #7a7a7a;
-  box-shadow: none;
-  height: 50px;
-  letter-spacing: -0.02em;
-  line-height: 30px;
-  padding-bottom: 11px;
-  padding-top: 10px;
-  text-transform: uppercase;
-  border: 1px solid rgba(0, 0, 0, 0.555);
+    border-radius: 8px;
+    width: 100%;
+    padding: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #7a7a7a;
+    box-shadow: none;
+    height: 38px;
+    letter-spacing: -0.02em;
+    line-height: 30px;
+    padding-bottom: 11px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.555);
 }
 
 .clientPage .section2 .form .feild input:focus,
@@ -794,6 +805,10 @@ ul.top_infomation li {
 .clientPage .section2 .form .feild select:focus {
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
   outline: 0;
+}
+
+.clientPage .butt{
+  margin-bottom: 12px;
 }
 
 .clientPage .section2 .form .feild textarea {
@@ -875,6 +890,10 @@ ul.top_infomation li {
   justify-content: center;
   margin-top: 100px;
   color: #fff;
+}
+
+.findajob .options_find_a_job{
+  font-size: 10px;
 }
 
 .findajob .find_heading_sub {
