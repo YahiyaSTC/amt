@@ -48,20 +48,24 @@ header .nav-img {
   width: 150px;
   height: 60px;
 }
-header .nav-btn {
+header .container button {
   background-color: #793bf3;
-  color: #ffffff;
+  color: #ffffff !important;
   border: 1px solid #793bf3 !important;
   cursor: pointer;
   border-radius: 0 !important;
   text-transform: uppercase;
   padding: 15px 40px;
 }
-header .nav-btn:hover {
+/* header .nav-btn:hover {
+  color: #793bf3 !important;
+  302561
+  180801
+} */
+
+header .container button:hover{
   background-color: #fff;
-  color: #793bf3;
-  /* 302561 */
-  /* 180801 */
+  color: #793bf3 !important;
 }
 
 header .nav-links {
@@ -73,7 +77,7 @@ header .nav-link {
   color: #1f232b;
   text-decoration: none;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 header .nav-link:hover {
   color: #55bce7;
@@ -84,9 +88,11 @@ header .nav-link:hover {
 
 .footer {
   padding-top: 80px;
-  background-image: url("../images/footer\ 1PNG.png");
-  background-position: top;
+  background-image: url("../images/footer.png");
+  background-position: center;
+  background-size: contain;
   text-align: center;
+
   background-repeat: no-repeat;
 }
 
@@ -100,15 +106,17 @@ ul.top_infomation li {
   display: block;
   font-size: 17px;
   color: #808080;
+  font-weight: 500;
 }
 .heading-3 {
-  font-size: 17px;
+  font-size: 25px;
   text-align: center;
   color: #808080;
+  font-weight: 700;
 }
-.footer-3 {
+/* .footer-3 {
   margin-left: 50%;
-}
+} */
 
 .copyright p {
   border-top: #808080 solid 1px;
@@ -125,7 +133,7 @@ ul.top_infomation li {
 /* Home page start */
 
 .homePage .home_carousel {
-  background-color: lightgray;
+  background-color: #504d4d;
   opacity: 0.6;
   display: flex;
   justify-content: center;
@@ -148,6 +156,13 @@ ul.top_infomation li {
   width: 75%;
   margin: auto;
   font-size: 20px;
+}
+
+.homePage .section1{
+  background-image: url("../images/form-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
 }
 
 .homePage .fa-ribbon:before {
@@ -176,7 +191,7 @@ ul.top_infomation li {
 }
 
 .homePage .carousel_extra {
-  margin-top: 200px;
+  margin-top: 10px;
   /* margin-top: 410px; */
   background-color: #003e53;
   color: #55bce7;
@@ -189,6 +204,7 @@ ul.top_infomation li {
 
 .homePage .highlight {
   color: #55bce7;
+  font-weight: 500;
 }
 
 .homePage .input1 {
@@ -391,7 +407,7 @@ ul.top_infomation li {
 
 .homePage .p_aos {
   font-size: 15px;
-  color: lightgray;
+  color: #7a7474;
   margin-top: 10px;
 }
 
@@ -417,10 +433,10 @@ ul.top_infomation li {
 }
 
 .homePage .amt_form {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* gap: 50px; */
+  /* flex-wrap: wrap; */
 }
 
 .homePage .amt_linear_img {
@@ -442,12 +458,14 @@ ul.top_infomation li {
 .homePage .h1_amt_home {
   font-size: 60px;
   color: #fff;
+  font-weight: 500;
 }
 
 .homePage .amt_form_sec {
+  justify-content: center;
   display: flex;
-  margin-top: 190px;
-  gap: 50px;
+  /* margin-top: 190px; */
+  gap: 24px;
   flex-wrap: wrap;
 }
 
@@ -465,67 +483,6 @@ ul.top_infomation li {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-/* @media only screen and (max-width: 1022px){
-  .amt_linear_img{
-      height: 750px;
-  }
-
-  .amt_form_sec{
-      display: block;
-  }
-
-  .amt_form_sec{
-      display: block;
-  }
-}
-
-@media only screen and (max-width: 280px){
-  .flip_amt_carousel{
-      margin-top: 15px;
-  }
-
-  .card{
-      margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 768px){
-  .form_1_amt{
-      display: block;
-      width: 50%;
-      margin: auto;
-  }
-  .form_2_amt{
-      display: block;
-      width: 50%;
-      margin: auto;
-  }
-}
-
-@media only screen and (max-width: 374px){
-  .h1_amt_home{
-      font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 334px){
-  .homePage .h1_amt_home{
-      font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 768px){
-  .homePage .sub_amt_sec{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .homePage .lightfont{
-      font-size: 20px;
-  }
-} */
 
 /* Home page end */
 
@@ -714,15 +671,15 @@ ul.top_infomation li {
 /* aplicant page end */
 
 /* team page start */
-.teamPage h2,
-.teamPage h2 span {
+.clientPage h2,
+.clientPage h2 span {
   color: #4e7ae1;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 44px;
 }
 
-.teamPage .request .right P {
+.clientPage .request .right P {
   font-weight: 400;
   font-size: 17px;
   margin-top: 40px;
@@ -730,7 +687,7 @@ ul.top_infomation li {
   color: #7a7a7a;
 }
 
-.teamPage .request .right .butt button {
+.clientPage .request .right .butt button {
   fill: #fff;
   color: #fff;
   background-color: #ff7052;
@@ -743,32 +700,32 @@ ul.top_infomation li {
   padding: 12px 30px;
 }
 
-.teamPage .request .right .butt button:hover {
+.clientPage .request .right .butt button:hover {
   background-color: #fff;
   color: #ff7052;
 }
 
-.teamPage .request .left .img img {
+.clientPage .request .left .img img {
   border-radius: 10%;
   animation: move 3s ease-in-out infinite;
 }
 
-.teamPage .section1 h2 {
+.clientPage .section1 h2 {
   font-size: 35px;
 }
 
-.teamPage .section1 P {
+.clientPage .section1 P {
   color: #797979;
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 50px;
 }
 
-.teamPage .section1 h2:last-child {
+.clientPage .section1 h2:last-child {
   color: #b3302f;
 }
 
-.teamPage .section1 h4 {
+.clientPage .section1 h4 {
   color: #1f232b;
   font-size: 20px;
   font-weight: 900;
@@ -780,25 +737,25 @@ ul.top_infomation li {
   letter-spacing: -0.02em;
 }
 
-.teamPage .section2 .form {
+.clientPage .section2 .form {
   width: 100%;
   background-color: #f5f5f5;
   border: 3px solid #808080;
   padding: 10px 20px;
   text-align: center;
 }
-.teamPage .section2 .form .feild:first-child {
+.clientPage .section2 .form .feild:first-child {
   margin-top: 0;
 }
 
-.teamPage .section2 .form .feild:last-child {
+.clientPage .section2 .form .feild:last-child {
   margin-bottom: 0;
 }
-.teamPage .section2 .form .feild {
+.clientPage .section2 .form .feild {
   margin: 30px 0;
 }
 
-.teamPage .section2 .form .feild label {
+.clientPage .section2 .form .feild label {
   color: #7a7a7a;
   font-weight: 700;
   display: block;
@@ -806,15 +763,15 @@ ul.top_infomation li {
   margin-bottom: 10px;
 }
 
-.teamPage .section2 .form .field .span {
+.clientPage .section2 .form .field .span {
   color: #7a7a7a;
   font-weight: 500 !important;
   font-size: 17px;
 }
 
-.teamPage .section2 .form .feild input,
-.teamPage .section2 .form .feild textarea,
-.teamPage .section2 .form .feild select {
+.clientPage .section2 .form .feild input,
+.clientPage .section2 .form .feild textarea,
+.clientPage .section2 .form .feild select {
   background-color: #fff;
   border-radius: 8px;
   width: 100%;
@@ -832,19 +789,19 @@ ul.top_infomation li {
   border: 1px solid rgba(0, 0, 0, 0.555);
 }
 
-.teamPage .section2 .form .feild input:focus,
-.teamPage .section2 .form .feild textarea:focus,
-.teamPage .section2 .form .feild select:focus {
+.clientPage .section2 .form .feild input:focus,
+.clientPage .section2 .form .feild textarea:focus,
+.clientPage .section2 .form .feild select:focus {
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
   outline: 0;
 }
 
-.teamPage .section2 .form .feild textarea {
+.clientPage .section2 .form .feild textarea {
   height: 150px;
   resize: vertical;
 }
 
-.teamPage .section2 .form .btn {
+.clientPage .section2 .form .btn {
   font-weight: 500;
   font-size: 16px;
   border-radius: 3px;
@@ -853,40 +810,40 @@ ul.top_infomation li {
   border: 1px solid transparent;
 }
 
-.teamPage .section3 .row {
+.clientPage .section3 .row {
   background-color: transparent;
   background-image: linear-gradient(140deg, #ebb0e7 0%, #2642d3 100%);
 }
 
-.teamPage .section3 .heading h1 {
+.clientPage .section3 .heading h1 {
   color: #fff;
   font-size: 50px;
   font-weight: 700;
 }
 
-.teamPage .section3 .heading ul li {
+.clientPage .section3 .heading ul li {
   color: #fff;
   font-weight: 500;
 }
 
-.teamPage .amt .head___ {
+.clientPage .amt .head___ {
   width: 80%;
 }
 
-.teamPage .amt h2 {
+.clientPage .amt h2 {
   font-size: 37px;
   text-align: center;
 }
 
-.teamPage .section4 h3 {
+.clientPage .section4 h3 {
   font-size: 36px;
 }
 
-.teamPage .section4 img {
+.clientPage .section4 img {
   animation: move 3s ease-in-out infinite;
 }
 
-.teamPage .section4 .list .list_item {
+.clientPage .section4 .list .list_item {
   color: #7a7a7a;
   font-weight: 400;
 }
@@ -974,6 +931,7 @@ ul.top_infomation li {
   z-index: 9;
   opacity: 1;
   width: 25%;
+  flex-wrap: wrap;
 }
 
 .findajob select {
@@ -1019,6 +977,7 @@ ul.top_infomation li {
 .findajob .img_sec3 {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
 }
 
 .findajob .a_section3 {
@@ -1075,6 +1034,10 @@ ul.top_infomation li {
 
 .findajob .p_div_33 {
   font-size: 14px;
+}
+
+.full-time {
+  color: red;
 }
 
 /* Find a job end */
@@ -1274,6 +1237,12 @@ ul.top_infomation li {
   margin: auto;
 }
 
+.amt-para-team-1-2 {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
 @keyframes puls {
   0%,
   100% {
@@ -1359,6 +1328,7 @@ ul.top_infomation li {
   background-repeat: no-repeat;
   background-color: transparent;
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -1411,7 +1381,10 @@ ul.top_infomation li {
 .about-head-1 {
   font-size: 70px;
   font-weight: 900;
+  width: fit-content;
   border-bottom: 4px solid #ffffff;
+  margin: auto;
+  margin-bottom: 30px;
 }
 .about-head-2 {
   font-size: 50px;
@@ -1434,7 +1407,66 @@ ul.top_infomation li {
   font-weight: 900;
 }
 
+/*  */
+
+.about-us-page .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-us-page .card {
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.about-us-page .card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-us-page .card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-us-page .card:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.about-us-page .card-list {
+  flex-direction: column;
+}
+
 /* About End */
+
+.btn-test {
+  background-color: #793bf3;
+    color: #ffffff !important;
+    border: 1px solid #793bf3 !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    z-index: 999999 !important;
+}
 
 .btn-1 {
   background-color: #55bce7;
@@ -1524,12 +1556,53 @@ ul.top_infomation li {
 /* media Query */
 
 @media only screen and (max-width: 1143px) {
+  .clientPage .heading {
+    width: 100%;
+  }
+  .clientPage .heading h2,
+  .clientPage .heading h2 span {
+    font-size: 35px;
+  }
   .flip-box {
     border: none;
   }
   .flip-box-front,
   .flip-box-back {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .amt-para-team-1 {
+    padding: 0;
+  }
+
+  .amt-img-team-2-transi {
+    width: 100%;
+  }
+
+  .amt-team {
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .homePage .highlight {
+    font-size: 12px;
+  }
+  .homePage .lightfont {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1022px) {
+  .amt_linear_img {
+    height: 750px;
+  }
+
+  .amt_form_sec {
+    display: block;
+  }
+
+  .amt_form_sec {
+    display: block;
   }
 }
 @media only screen and (max-width: 994px) {
@@ -1545,20 +1618,172 @@ ul.top_infomation li {
   .aplicantPage .section1 .left {
     width: 100% !important;
   }
+
+  .clientPage .section4 img {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .clientPage .request .right .heading {
     width: 100% !important;
   }
 }
+@media only screen and (max-width: 800px) {
+  /* .clientPage .heading {
+    width: 100%;
+  } */
+  .clientPage .heading h2,
+  .clientPage .heading h2 span {
+    font-size: 35px;
+  }
 
+  .clientPage .request .right P {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .clientPage .request .right .butt button {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  .clientPage .section2 .form .field .span {
+    font-size: 14px;
+  }
+  .clientPage .section2 .form .feild label {
+    font-size: 14px;
+  }
+  .clientPage .section2 .form .feild input,
+  .clientPage .section2 .form .feild textarea,
+  .clientPage .section2 .form .feild select {
+    height: 40px;
+  }
+
+  .clientPage .section3 .heading h1 {
+    font-size: 28px;
+  }
+
+  .clientPage .section3 .heading div {
+    margin-top: 2rem !important;
+  }
+
+  .clientPage .amt h2 {
+    font-size: 25px;
+  }
+
+  .clientPage .section4 h3 {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+  .clientPage .section4 .list .list_item {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 768px) {
+  .carousel-opacity {
+    gap: 20px;
+  }
+
+  .div_1_amt,
+  .div_2_amt {
+    width: 100% !important;
+  }
+
+  .sub_amt_sec .img_doc {
+    width: 30%;
+    margin: auto;
+  }
   .aplicantPage .texxxtt .logo img {
     width: 100% !important;
     max-width: 20%;
   }
-}
 
+  .clientPage .request .d-flex {
+    flex-direction: column-reverse;
+  }
+
+  .clientPage .request .right,
+  .clientPage .request .left {
+    width: 100% !important;
+  }
+
+  .clientPage .request .left .img {
+    text-align: center;
+  }
+
+  .clientPage .request .left .img img {
+    width: 50% !important;
+  }
+
+  .clientPage .request .right P {
+    font-size: 16px;
+  }
+  .clientPage .request .right .butt button {
+    font-size: 17px;
+  }
+
+  .clientPage .heading h2,
+  .clientPage .heading h2 span {
+    font-size: 40px;
+  }
+
+  .clientPage .section1 h2 {
+    font-size: 25px;
+  }
+
+  .clientPage .section1 P {
+    font-size: 12px;
+  }
+
+  .clientPage .section1 h4 {
+    font-size: 13px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .main_mmenu {
+    display: block !important;
+  }
+
+  .form_1_amt {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+  .form_2_amt {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+  .homePage .sub_amt_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homePage .lightfont {
+    font-size: 20px;
+  }
+
+  header .nav-btn {
+    padding: 8px !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .amt-team-head {
+    font-size: 30px;
+  }
+  .amt-para-team-1 {
+    font-size: 14px;
+  }
+
+  .footer .hedingh3 img {
+    width: 30%;
+  }
+}
 @media only screen and (max-width: 650px) {
   .flip-box-front,
   .flip-box-back {
@@ -1573,6 +1798,35 @@ ul.top_infomation li {
     margin: auto;
     text-align: center;
     /* transform: translate(-50%,-50%); */
+  }
+
+  header .header-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about-head-1{
+    font-size: 33px;
+  }
+
+  .banner_about .about_text p{
+    font-size: 12px;
+    line-height: 2;
+  }
+}
+@media only screen and (max-width: 565px) {
+  .clientPage .section3 .heading h1 {
+    font-size: 23px;
+  }
+
+  .clientPage .section3 .heading ul li {
+    font-size: 14px;
+  }
+  .about____ {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1590,7 +1844,65 @@ ul.top_infomation li {
     padding: 10px 0;
   }
 }
+@media only screen and (max-width: 500px) {
+  .amt-team {
+    flex-direction: column-reverse;
+  }
 
+  .amt-team-1,
+  .amt-team-2 {
+    width: 100% !important;
+  }
+  .form_2_amt {
+    width: 100% !important;
+  }
+  .form_1_amt {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+
+  .about-head-2{
+    font-size: 32px;
+  }
+  .our-specialities-head,.our-specialities-head{
+    font-size: 20px;
+    
+  }
+  .clientPage .heading h2,
+  .clientPage .heading h2 span {
+    font-size: 30px;
+  }
+  .clientPage .request .left .img img {
+    width: 80% !important;
+  }
+
+  .clientPage .section3 .heading {
+    width: 100% !important;
+  }
+
+  .clientPage .section4 .row {
+    flex-direction: column !important;
+  }
+
+  .clientPage .section4 .col-5 {
+    text-align: center;
+  }
+
+  .clientPage .section4 .col-5,
+  .clientPage .section4 .col-7 {
+    width: 100% !important;
+  }
+
+  .clientPage .section4 img {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .amt-para-team-1-2 {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 350px) {
   .aplicantPage .banner h2 {
     font-size: 40px;
@@ -1624,10 +1936,143 @@ ul.top_infomation li {
     font-size: 25px;
   }
 }
+@media only screen and (max-width: 374px) {
+  .h1_amt_home {
+    font-size: 30px;
+  }
 
+  .banner_about .about_text{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 332px) {
+  .about-us-page .about_text {
+    font-size: 10px !important;
+  }
+}
+@media only screen and (max-width: 334px) {
+  .homePage .h1_amt_home {
+    font-size: 25px;
+  }
+}
 @media only screen and (max-width: 300px) {
   .flip-box-front,
   .flip-box-back {
     width: 45%;
   }
+
+  .clientPage .heading h2,
+  .clientPage .heading h2 span {
+    font-size: 25px;
+  }
+
+  .clientPage .request .right P {
+    font-size: 13px;
+  }
+
+  .clientPage .request .right .butt button {
+    font-size: 11px;
+  }
+
+  .clientPage .section1 .parah {
+    width: 100% !important;
+    text-align: justify;
+  }
+
+  .clientPage .section2 .field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .clientPage .section2 .form .field .span {
+    line-height: 2;
+    font-size: 12px;
+  }
+
+  .clientPage .section2 .form .feild label {
+    font-size: 11px;
+  }
+
+  .clientPage .section2 .form .feild {
+    margin: 15px 0;
+  }
+
+  .clientPage .section3 .heading h1 {
+    font-size: 18px;
+  }
+
+  .clientPage .section3 .heading ul li {
+    font-size: 10px;
+  }
+
+  .clientPage .amt h2 {
+    font-size: 15px;
+  }
+
+  .clientPage .section2 .form .feild input,
+  .clientPage .section2 .form .feild textarea,
+  .clientPage .section2 .form .feild select {
+    height: 30px;
+    padding: 5px;
+  }
+
+  .copyright p {
+    font-size: 9px;
+    line-height: 16px;
+  }
+
+  .heading-3 {
+    font-size: 16px;
+  }
+
+  ul.top_infomation li {
+    font-size: 12px;
+  }
+
+  .footer .hedingh3 p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .flip_amt_carousel {
+    margin-top: 15px;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+}
+
+.main_mmenu {
+  display: none;
+  padding: 10px 0;
+  width: fit-content !important;
+}
+
+
+.gototop {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  background-color: #55bce7;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center !important;
+  display: none;
+  cursor: "pointer";
+  z-index: 999999999999999999;
+}
+
+.gototop a i {
+color: #fff;
+}
+
+.back_to_top {
+  display: flex;
+  opacity: 1;
+  cursor: "pointer";
 }

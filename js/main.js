@@ -45,3 +45,35 @@ $(document).ready(function () {
       },
     });
   });
+
+
+
+  
+jQuery(document).ready(function($) {
+  $("#menu").mmenu({
+      "extensions": ["effect-menu-zoom", "effect-panels-zoom", "pagedim-black", "theme-dark"],
+      "offCanvas": {
+          "position": "left"
+      },
+      "counters": true,
+      "iconPanels": true,
+      "navbars": [{
+          "position": "top"
+      }]
+  });
+});
+
+
+$(".gototop").on("click", function () {
+  scroll({
+    top: 0,
+  });
+});
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+  if (scroll >= 1000) {
+    $(".gototop").addClass("back_to_top");
+  } else {
+    $(".gototop").removeClass("back_to_top");
+  }
+});
