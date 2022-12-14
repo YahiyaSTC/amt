@@ -58,8 +58,11 @@ header .container button {
   padding: 15px 40px;
 }
 
-header .container button:hover{
+header .container button:hover {
   background-color: #fff;
+  color: #793bf3 !important;
+}
+header .container button:hover a {
   color: #793bf3 !important;
 }
 /* header .nav-btn:hover {
@@ -68,11 +71,9 @@ header .container button:hover{
   180801
 } */
 
-header .container{
+header .container {
   max-width: 1140px;
 }
-
-
 
 header .nav-links {
   position: sticky !important;
@@ -164,7 +165,7 @@ ul.top_infomation li {
   font-size: 20px;
 }
 
-.homePage .section1{
+.homePage .section1 {
   background-image: url("../images/form-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,6 +184,11 @@ ul.top_infomation li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.homePage .sub_amt_sec h1 {
+  font-weight: 700;
+  font-size: 18px;
 }
 /* 
 .homePage .img_doc{
@@ -273,6 +279,13 @@ ul.top_infomation li {
   opacity: 0.6;
 } */
 
+.homePage .card .card-text {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #7a7a7a;
+  line-height: 1.5;
+}
 .text-gradient {
   font-size: 168px;
   font-weight: 900;
@@ -411,6 +424,7 @@ ul.top_infomation li {
   font-size: 15px;
   color: #7a7474;
   margin-top: 10px;
+  line-height: 1.5;
 }
 
 .homePage .amt_testimonials {
@@ -425,6 +439,12 @@ ul.top_infomation li {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.homePage .amt_single_testimonial h1 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7a7a7a;
 }
 
 .homePage .form-control {
@@ -784,20 +804,20 @@ ul.top_infomation li {
 .clientPage .section2 .form .feild textarea,
 .clientPage .section2 .form .feild select {
   background-color: #fff;
-    border-radius: 8px;
-    width: 100%;
-    padding: 6px;
-    font-weight: 500;
-    font-size: 12px;
-    color: #7a7a7a;
-    box-shadow: none;
-    height: 38px;
-    letter-spacing: -0.02em;
-    line-height: 30px;
-    padding-bottom: 11px;
-    padding-top: 10px;
-    text-transform: uppercase;
-    border: 1px solid rgba(0, 0, 0, 0.555);
+  border-radius: 8px;
+  width: 100%;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #7a7a7a;
+  box-shadow: none;
+  height: 38px;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  padding-bottom: 11px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 0.555);
 }
 
 .clientPage .section2 .form .feild input:focus,
@@ -807,7 +827,7 @@ ul.top_infomation li {
   outline: 0;
 }
 
-.clientPage .butt{
+.clientPage .butt {
   margin-bottom: 12px;
 }
 
@@ -892,7 +912,7 @@ ul.top_infomation li {
   color: #fff;
 }
 
-.findajob .options_find_a_job{
+.findajob .options_find_a_job {
   font-size: 10px;
 }
 
@@ -987,6 +1007,12 @@ ul.top_infomation li {
   padding: 30px;
 }
 
+.findajob .section3 .section3_text_div p {
+  line-height: 1.5; 
+    font-weight: 400;
+    font-size: 15px;
+    color: #7a7a7a;
+}
 .findajob .section3_text_div {
   display: flex;
   flex-direction: column;
@@ -1032,7 +1058,9 @@ ul.top_infomation li {
 }
 
 .findajob .p_div_33 {
-  font-size: 15px;
+  font-weight: 700;
+    font-size: 14px;
+    color: #7a7a7a;
 }
 
 .findajob .div_sec3 {
@@ -1051,9 +1079,6 @@ ul.top_infomation li {
   gap: 5px;
 }
 
-.findajob .p_div_33 {
-  font-size: 14px;
-}
 
 .full-time {
   color: red;
@@ -1062,6 +1087,12 @@ ul.top_infomation li {
 /* Find a job end */
 
 /* CONTACT US */
+
+.Contact-Us-Page form label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #7a7a7a;
+}
 
 .form-img {
   justify-content: center;
@@ -1082,8 +1113,9 @@ ul.top_infomation li {
   font-weight: 700;
 }
 .form-card-subhead {
-  color: #1f232b;
   font-weight: 500;
+    font-size: 17px;
+    color: #7a7a7a;
 }
 
 .flip-box {
@@ -1230,17 +1262,23 @@ ul.top_infomation li {
   font-weight: 700;
 }
 .amt-para-team-1 {
-  color: #808080;
-  text-align: justify;
-  padding-left: 10%;
+  /* text-align: justify; */
+  font-weight: 400;
+  font-size: 16px;
+  color: #7a7a7a;
+  list-style-type: disc;
 }
 .amt-img-team-2 {
-  display: flex;
+  /* display: flex; */
   /* justify-content: center; */
-  float: right;
-  width: 85%;
-  height: 320px;
+  /* float: right; */
+  /* width: 85%; */
+  /* height: 320px; */
   padding-left: 10%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7a7a7a;
+  text-transform: capitalize !important;
 }
 /* .amt-img-team-2{
   animation: infinite ease-in-out;
@@ -1257,9 +1295,9 @@ ul.top_infomation li {
 }
 
 .amt-para-team-1-2 {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
+  font-weight: 400;
+  font-size: 15px;
+  color: #7a7a7a;
 }
 
 @keyframes puls {
@@ -1271,9 +1309,6 @@ ul.top_infomation li {
     transform: scale(1);
   }
 }
-.amt-para-team-1-2 {
-  color: #1f232b;
-}
 .amt-team-bg {
   background-color: #f6f6f6;
 }
@@ -1284,10 +1319,14 @@ ul.top_infomation li {
   padding-top: 4px;
 }
 .team-card-para-text {
-  color: #000;
+  font-weight: 700;
+  font-size: 10px;
+  color: #7a7a7a;
+  padding: 0 5px;
+  /* color: #000;
   font-size: 10px;
   padding-top: 3px;
-  font-weight: 600;
+  font-weight: 600; */
 }
 
 .teamPage .cards-list {
@@ -1426,6 +1465,17 @@ ul.top_infomation li {
   font-weight: 900;
 }
 
+.about-us-page .cards-list {
+  display: flex;
+}
+
+.about-us-page .about____ ul li {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 2;
+}
+
 /*  */
 
 .about-us-page .cards-list {
@@ -1477,14 +1527,14 @@ ul.top_infomation li {
 /* About End */
 
 .btn-test {
-  background-color: #793bf3;
-    color: #ffffff !important;
-    border: 1px solid #793bf3 !important;
-    cursor: pointer;
-    border-radius: 0 !important;
-    text-transform: uppercase;
-    padding: 15px 40px;
-    z-index: 999999 !important;
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 1px solid #fff !important;
+  cursor: pointer;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  z-index: 999999 !important;
 }
 
 .btn-1 {
@@ -1825,11 +1875,11 @@ ul.top_infomation li {
   }
 }
 @media only screen and (max-width: 600px) {
-  .about-head-1{
+  .about-head-1 {
     font-size: 33px;
   }
 
-  .banner_about .about_text p{
+  .banner_about .about_text p {
     font-size: 12px;
     line-height: 2;
   }
@@ -1880,13 +1930,12 @@ ul.top_infomation li {
   }
 }
 @media only screen and (max-width: 450px) {
-
-  .about-head-2{
+  .about-head-2 {
     font-size: 32px;
   }
-  .our-specialities-head,.our-specialities-head{
+  .our-specialities-head,
+  .our-specialities-head {
     font-size: 20px;
-    
   }
   .clientPage .heading h2,
   .clientPage .heading h2 span {
@@ -1960,7 +2009,7 @@ ul.top_infomation li {
     font-size: 30px;
   }
 
-  .banner_about .about_text{
+  .banner_about .about_text {
     width: 100%;
   }
 }
@@ -2069,7 +2118,6 @@ ul.top_infomation li {
   width: fit-content !important;
 }
 
-
 .gototop {
   position: fixed;
   bottom: 10px;
@@ -2087,7 +2135,7 @@ ul.top_infomation li {
 }
 
 .gototop a i {
-color: #fff;
+  color: #fff;
 }
 
 .back_to_top {
