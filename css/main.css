@@ -1580,7 +1580,6 @@ ul.top_infomation li {
   line-height: 30px;
   padding-bottom: 11px;
   padding-top: 10px;
-  text-transform: capitalize;
   border: 1px solid rgba(0, 0, 0, 0.555);
 }
 
@@ -1596,7 +1595,6 @@ ul.top_infomation li {
   height: 150px;
   letter-spacing: -0.02em;
   line-height: 30px;
-  text-transform: uppercase;
   resize: none;
   border: 1px solid rgba(0, 0, 0, 0.555);
   overflow: auto;
@@ -1658,8 +1656,20 @@ ul.top_infomation li {
   font-weight: 700;
   display: block;
   font-size: 17px;
-
   margin-bottom: 10px;
+}
+.signInpage .section1 .form  span {
+  color: #7a7a7a;
+  font-weight: 500;
+  display: block;
+  font-size: 16px;
+}
+
+.signInpage .section1 .form  a{
+  color: #7a7a7a;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 .signInpage .section1 .form .feild input,

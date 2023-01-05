@@ -10,16 +10,17 @@ import {
 import {
   getAuth,
   signInWithEmailAndPassword,
-  signOut
+  signOut,
+  onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 const firebaseConfig = {
-  apiKey: "AIzaSyAqC5gNAz_OqJ77vZVlNr5ZxXn_H3hleU0",
-  authDomain: "amt-staffing-bdfb7.firebaseapp.com",
-  projectId: "amt-staffing-bdfb7",
-  storageBucket: "amt-staffing-bdfb7.appspot.com",
-  messagingSenderId: "125493340716",
-  appId: "1:125493340716:web:f197adf79a76357dd53f89",
-  measurementId: "G-K44D82Z3TJ",
+  apiKey: "AIzaSyDOUi3263ctetpNY_5v300Y457kTzXU-Yo",
+  authDomain: "amtstaffing-28882.firebaseapp.com",
+  projectId: "amtstaffing-28882",
+  storageBucket: "amtstaffing-28882.appspot.com",
+  messagingSenderId: "332453668836",
+  appId: "1:332453668836:web:b2ac79d16c3e9df9fc09f1",
+  measurementId: "G-Q512FTK8ZK"
 };
 
 // Initialize Firebase
@@ -36,6 +37,7 @@ let jobType = document.getElementById("jobType");
 let jobStatus = document.getElementById("jobStatus");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
+let loginUser = document.getElementById("loginUser");
 // Buttons
 let submit_btn = document.getElementById("submit_btn");
 let btnn = document.getElementById("btnn");
@@ -69,6 +71,28 @@ function userLogIn() {
       console.log(errorMessage);
       alert(errorMessage);
     });
+}
+
+function isLoginUser() {
+  const auth = getAuth();
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const {uid,email} = user
+    console.log(email);
+
+  } else {
+    console.log("not found")
+  }
+});
+
+
+
+
+
+  // if(user) {
+  //   alert('User Already Login')
+  //   window.location.href("./addcard.html")
+  // }
 }
 
 function userLogOut() {
@@ -184,4 +208,7 @@ function getData() {
 
 // submit_btn.addEventListener("click", addData);
 
+// loginUser.addEventListener("load",isLoginUser)
+
 // window.reload = getData();
+// window.reload = isLoginUser();
