@@ -7,7 +7,11 @@ import {
   child,
   onValue,
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  signOut
+} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAqC5gNAz_OqJ77vZVlNr5ZxXn_H3hleU0",
   authDomain: "amt-staffing-bdfb7.firebaseapp.com",
@@ -17,15 +21,13 @@ const firebaseConfig = {
   appId: "1:125493340716:web:f197adf79a76357dd53f89",
   measurementId: "G-K44D82Z3TJ",
 };
-// import {signIn} from '../Admin/'
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
-const auth = getAuth(app);
+// const auth = getAuth(app);
 
 // Add Data
-
 let title = document.getElementById("title");
 let companyName = document.getElementById("companyName");
 let blogText = document.getElementById("blogText");
@@ -38,31 +40,48 @@ let password = document.getElementById("password");
 let submit_btn = document.getElementById("submit_btn");
 let btnn = document.getElementById("btnn");
 let signIn_btn = document.getElementById("signIn_btn");
+let submit_logout_btn = document.getElementById("submit_logout_btn");
 
-function AuthLogin() {
+function Auth() {
   if (email.value === "") {
     alert("Please Enter Your Email");
   } else if (password.value === "") {
     alert("Please Enter Your Password");
   } else {
-    alert("done");
+    // alert("done");
+    console.log("done");
+    userLogIn();
   }
 }
 
+function userLogIn() {
+  const auth = getAuth();
+  signInWithEmailAndPassword(auth, email.value, password.value)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      console.log(user);
+      alert("user Login Success");
+      window.location.replace("./addcard.html");
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorMessage);
+      alert(errorMessage);
+    });
+}
 
-function userLogIn(){
-  createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-  });
-
+function userLogOut() {
+  const auth = getAuth();
+  signOut(auth)
+    .then(() => {
+      // Sign-out successful.
+      alert("user SignOut Successfully")
+      window.location.replace("./signIn.html")
+    })
+    .catch((error) => {
+      // An error happened.
+    });
 }
 
 function addData() {
@@ -159,7 +178,9 @@ function getData() {
     });
 }
 
-signIn_btn.addEventListener("click", AuthLogin);
+// signIn_btn.addEventListener("click", Auth);
+
+// submit_logout_btn.addEventListener("click", userLogOut);
 
 // submit_btn.addEventListener("click", addData);
 
