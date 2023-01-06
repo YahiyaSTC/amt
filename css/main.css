@@ -454,12 +454,6 @@ ul.top_infomation li {
   border-radius: none;
 }
 
-.homePage .amt_form {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* gap: 50px; */
-  /* flex-wrap: wrap; */
-}
 
 .homePage .amt_linear_img {
   margin-top: 50px;
@@ -687,9 +681,21 @@ ul.top_infomation li {
 .aplicantPage .section1 .form .btn {
   font-weight: 500;
   font-size: 16px;
-  background-color: #f3f2f2;
-  color: #274670;
-  border: 1px solid #000;
+   background-color: #C01C2F;
+  /* background-color: #f3f2f2;
+  color: #274670; */
+  /* border: 1px solid #000; */
+  box-shadow: 1px 0px 17px 1px rgb(0 0 0 / 25%),
+    1px 0px 17px 0px rgb(0 0 0 / 22%);
+  margin: 0;
+  padding: 0;
+}
+
+.aplicantPage .section1 .form .btn a {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: #fff;
 }
 
 .aplicantPage .client h2 {
@@ -1008,10 +1014,11 @@ ul.top_infomation li {
 }
 
 .findajob .section3 .section3_text_div p {
-  line-height: 1.5; 
-    font-weight: 400;
-    font-size: 15px;
-    color: #7a7a7a;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 15px;
+  color: #7a7a7a;
+  line-break: anywhere;
 }
 .findajob .section3_text_div {
   display: flex;
@@ -1060,8 +1067,8 @@ ul.top_infomation li {
 
 .findajob .p_div_33 {
   font-weight: 700;
-    font-size: 14px;
-    color: #7a7a7a;
+  font-size: 14px;
+  color: #7a7a7a;
 }
 
 .findajob .div_sec3 {
@@ -1079,7 +1086,6 @@ ul.top_infomation li {
   align-items: baseline;
   gap: 5px;
 }
-
 
 .full-time {
   color: red;
@@ -1115,8 +1121,8 @@ ul.top_infomation li {
 }
 .form-card-subhead {
   font-weight: 500;
-    font-size: 17px;
-    color: #7a7a7a;
+  font-size: 17px;
+  color: #7a7a7a;
 }
 
 .flip-box {
@@ -1527,11 +1533,9 @@ ul.top_infomation li {
 
 /* About End */
 
-
-
 /* Admin Start */
 
-.addCardPage .section1 .head h1{
+.addCardPage .section1 .head h1 {
   font-weight: 700;
 }
 
@@ -1542,8 +1546,6 @@ ul.top_infomation li {
   text-align: center;
   margin: 30px auto 0 auto;
 }
-
-
 
 .addCardPage .section1 .form .feild:first-child {
   margin-top: 0;
@@ -1583,7 +1585,7 @@ ul.top_infomation li {
   border: 1px solid rgba(0, 0, 0, 0.555);
 }
 
-.addCardPage .section1 .form .feild textarea{
+.addCardPage .section1 .form .feild textarea {
   background-color: #fff;
   border-radius: 8px;
   width: 100%;
@@ -1616,7 +1618,6 @@ ul.top_infomation li {
   text-transform: uppercase;
 }
 
-
 /*  */
 
 .signInpage .section1 {
@@ -1632,13 +1633,11 @@ ul.top_infomation li {
   text-align: center;
 }
 
-
-.signInpage h1{
+.signInpage h1 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 30px;
 }
-
 
 .signInpage .section1 .form .feild:first-child {
   margin-top: 0;
@@ -1658,14 +1657,14 @@ ul.top_infomation li {
   font-size: 17px;
   margin-bottom: 10px;
 }
-.signInpage .section1 .form  span {
+.signInpage .section1 .form span {
   color: #7a7a7a;
   font-weight: 500;
   display: block;
   font-size: 16px;
 }
 
-.signInpage .section1 .form  a{
+.signInpage .section1 .form a {
   color: #7a7a7a;
   font-weight: 500;
   font-size: 16px;
@@ -1690,7 +1689,7 @@ ul.top_infomation li {
   border: 1px solid rgba(0, 0, 0, 0.555);
 }
 
-.signInpage .section1 .form .feild textarea{
+.signInpage .section1 .form .feild textarea {
   background-color: #fff;
   border-radius: 8px;
   width: 100%;
@@ -1725,11 +1724,6 @@ ul.top_infomation li {
 }
 
 /* Admin End */
-
-
-
-
-
 
 .btn-test {
   background-color: transparent;

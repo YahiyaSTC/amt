@@ -79,3 +79,9 @@ window.addEventListener("scroll", (event) => {
 });
 
 
+
+
+
+// function gotoAp(){
+//   window.location.href('https://amtstaffing.stafferlink.com/application/applicationlogin.aspx')
+// }

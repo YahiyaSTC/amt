@@ -1,0 +1,97 @@
+.eventsPage header .nav-img {
+  width: 150px;
+  height: 60px;
+}
+.eventsPage header .container button {
+  background-color: #793bf3;
+  color: #ffffff !important;
+  border: 1px solid #793bf3 !important;
+  cursor: pointer;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  padding: 15px 40px;
+}
+
+.eventsPage header .container button:hover {
+  background-color: #fff;
+  color: #793bf3 !important;
+}
+.eventsPage header .container button:hover a {
+  color: #793bf3 !important;
+}
+
+.h1_modifiedEvents {
+  color: #fff;
+  background-color: dodgerblue;
+}
+
+.card-wordings {
+  color: dodgerblue;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.row_events {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card_events_wordings {
+  background-color: dodgerblue;
+}
+
+.whole_card_event {
+  padding: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .row_events {
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+
+  .row_events_sub {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .row_events {
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+
+  .row_events_sub {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .row_events {
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+
+  .row_events_sub {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card_events {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1198px) {
+  .card_events {
+    margin-top: 20px;
+  }
+}
